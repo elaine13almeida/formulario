@@ -1,0 +1,73 @@
+body{
+    margin: 0%;
+    padding: 50px 0;
+    background-color: blueviolet;
+    color: #fff;
+}
+
+.container{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container *{
+    box-sizing: border-box; /* facilita a resposividade nos navegadores, ajustandos os elementos dentro de boxes*/
+}
+.flex-outer{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.flex-outer,
+.flex-inner{
+    list-style-type: none;
+}
+
+.flex-outer li,
+.flex-inner{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flex-outer>li>label,
+.flex-outer li p{
+flex: 1 0 120px;
+max-width: 220px;
+}
+
+.flex-outer>li>label+*,
+.flex-inner{
+flex: 1 0 220px;
+}
+
+.flex-inner{
+    padding: 0 8px;
+    justify-content: space-between;
+}
+
+.flex-outer li label,
+.flex-outer li p{
+    padding: 8px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;/* em caixa alta*/
+}
+.flex-outer li button{
+    margin-left: auto;
+    padding: 8px 15px;
+    border: none;
+    background: violet;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-radius: 500px;
+}
+.flex-outer li textarea, input{
+    padding: 15px;
+    border: none;
+      }
+[type="email"], [type="text"], [type="tel"], .flex-outer li textarea{
+    width: 45%;
+    margin: 10px auto;
+}
